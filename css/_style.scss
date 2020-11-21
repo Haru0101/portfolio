@@ -141,7 +141,7 @@ h2 {
 }
 
 .works,
-.blog,
+.skills,
 .contact {
     background-color: #F6F4EF;
 }
@@ -154,4 +154,24 @@ footer {
     line-height: 1;
     // font-weight: bold;
     color: #fff;
+}
+
+.boxSection {
+    display: flex;
+}
+
+.boxImg {
+    height: 250px;
+    width: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &01 {
+        background-image: url('../img/img_city01.jpg');
+    }
+
+    &02 {
+        background-image: url('../img/img_city02.jpg');
+    }
 }
