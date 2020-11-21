@@ -28,7 +28,7 @@
             <p>I'm a <span>front-end engineer.</span></p>
         </div>
         <div class="imgWrap">
-            <img src="img/img_top.jpg" alt="トップ画像">
+            <img class="parallax" src="img/img_top.jpg" alt="トップ画像">
         </div>
         <!-- <div class="scrollDown">
             <span></span>
@@ -44,8 +44,8 @@
             </div>
         </section>
         <section class="boxSection">
-            <div class="boxImg boxImg01"></div>
-            <div class="boxImg boxImg02"></div>
+            <img class="boxImg boxImg01 parallax" src="img/img_city01.jpg">
+            <img class="boxImg boxImg02 parallax" src="img/img_city02.jpg">
         </section>
         <section id="blog" class="blog">
             <div class="inner">
@@ -86,6 +86,11 @@
             header: '[data-scroll-header]',
             easing: 'easeInOutCubic',
         });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    <script>
+        let image = document.getElementsByClassName('parallax');
+        new simpleParallax(image);
     </script>
 </body>
 
