@@ -177,3 +177,25 @@ footer {
     //     background-image: url('../img/img_city02.jpg');
     // }
 }
+
+.blog {
+    text-align: center;
+}
+
+.logoLink {
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 40px 0;
+    max-width: 100%;
+    width: 160px;
+    transition: all 0.4s;
+    &:hover {
+        box-shadow: 0 0 4px #aaa;
+        transform: scale(1.2);
+    }
+}
+.blogLogo {
+    width: 100%;
+}
