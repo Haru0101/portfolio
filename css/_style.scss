@@ -192,9 +192,10 @@ footer {
     max-width: 100%;
     width: 160px;
     transition: all 0.4s;
+    background-color: #fff;
     &:hover {
         box-shadow: 0 0 4px #aaa;
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 }
 .blogLogo {
