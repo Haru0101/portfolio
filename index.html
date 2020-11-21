@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header data-scroll-header>
         <nav>
             <ul>
                 <li><a href="#" class="active js-smooth-scroll">Top</a></li>
@@ -79,7 +79,7 @@
     <script src="js/smooth-scroll.js"></script>
     <script>
         let scroll = new SmoothScroll('a[href*="#"]',{
-            offset: 80,
+            header: '[data-scroll-header]',
             easing: 'easeInOutCubic',
         });
     </script>
