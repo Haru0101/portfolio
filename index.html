@@ -5,22 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/common.css">
-    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
     <title>Haruki Okuda</title>
 </head>
 
 <body>
     <header>
         <nav>
-        <ul>
-            <li><a href="#" class="active">Top</a></li>
-            <li><a href="#works">Works</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#profile">Profile</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+            <ul>
+                <li><a href="#" class="active js-smooth-scroll">Top</a></li>
+                <li><a href="#works" class="js-smooth-scroll">Works</a></li>
+                <li><a href="#blog" class="js-smooth-scroll">Blog</a></li>
+                <li><a href="#skills" class="js-smooth-scroll">Skills</a></li>
+                <li><a href="#profile" class="js-smooth-scroll">Profile</a></li>
+                <li><a href="#contact" class="js-smooth-scroll">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <section class="top">
         <div class="typoWrap">
@@ -45,37 +44,59 @@
         </section>
         <section id="blog" class="blog">
             <div class="inner">
-            <h2>Blog<span>ブログ</span></h2>
-            <p>気になった技術をまとめたり、<br>
-                プログラミングスクールで教えている生徒に向けて書いた記事が中心です。</p>
-                </div>
-            </section>
+                <h2>Blog<span>ブログ</span></h2>
+                <p>気になった技術をまとめたり、<br>
+                    プログラミングスクールで教えている生徒に向けて書いた記事が中心です。</p>
+            </div>
+        </section>
         <section id="skills" class="skills">
             <div class="inner">
-            <h2>Skills<span>技術</span></h2>
-            <p>WEB制作に必要なHTML5, CSS3, JavaScriptをはじめ、<br>
-                アプリ開発のためのVue.jsやLaravelも学習しています。</p>
+                <h2>Skills<span>技術</span></h2>
+                <p>WEB制作に必要なHTML5, CSS3, JavaScriptをはじめ、<br>
+                    アプリ開発のためのVue.jsやLaravelも学習しています。</p>
             </div>
         </section>
         <section id="profile" class="profile">
             <div class="inner">
-            <h2>Profile<span>人物紹介</span></h2>
-            <p>私のライフヒストリーをかんたんにまとめてみました。<br>
-                ミニマリストでなんでも効率化しがちです。</p>
-                </div>
+                <h2>Profile<span>人物紹介</span></h2>
+                <p>私のライフヒストリーをかんたんにまとめてみました。<br>
+                    ミニマリストでなんでも効率化しがちです。</p>
+            </div>
         </section>
         <section id="contact" class="contact">
             <div class="inner">
-            <h2>Contact<span>お問い合わせ</span></h2>
-            <p>絶賛転職活動中です。<br>
-                興味を持っていただけた方は、お話だけでも構いません。<br>
-                お気軽にお問い合わせください。</p>
+                <h2>Contact<span>お問い合わせ</span></h2>
+                <p>絶賛転職活動中です。<br>
+                    興味を持っていただけた方は、お話だけでも構いません。<br>
+                    お気軽にお問い合わせください。</p>
             </div>
         </section>
     </main>
     <footer>
         <p><small>2020 &copy; Haruki Okuda</small></p>
     </footer>
+    <script>
+        document.addEventListener("click", e => {
+            const target = e.target;
+            // clickした要素がclass属性、js-smooth-scrollを含まない場合は処理を中断
+            if (!target.classList.contains("js-smooth-scroll")) return;
+            e.preventDefault();
+            const targetId = target.hash;
+            const targetElement = document.querySelector(targetId);
+            // 画面上部から要素までの距離
+            const rectTop = targetElement.getBoundingClientRect().top;
+            // 現在のスクロール距離
+            const offsetTop = window.pageYOffset;
+            // スクロール位置に持たせるバッファ
+            const buffer = 80;
+            const top = rectTop + offsetTop - buffer;
+
+            window.scrollTo({
+                top,
+                behavior: "smooth"
+            });
+        });
+    </script>
 </body>
 
 </html>
