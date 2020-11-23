@@ -181,6 +181,12 @@ h2 {
         color: $mc02;
         margin-top: 10px;
         font-weight: normal;
+        &:before, &:after {
+            content: '―';
+            display: inline-block;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
     }
 
     &+p {
