@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600&display=swap');
 
+// カラー変数
+$mc01: #fff;
+$mc02: #666;
+$mc03: #A03C44;
+$mc04: #a38a00;
+$mc05: #F6F4EF;
+
 html {
-    // background-color: #F6F4EF;
     font-size: 62.5%;
-    // scroll-behavior: smooth;
 }
 
 main {}
@@ -43,7 +48,7 @@ header {
     font-family: "Yu Gothic", "游ゴシック", "Work Sans", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
     opacity: 0.9;
     display: flex;
-    background-color: #fff;
+    background-color: $mc01;
     position: fixed;
     top: 0;
     left: 50%;
@@ -64,20 +69,15 @@ nav {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        padding: 0 0 0 30px;
+        padding-left: 30px;
     }
+
     li {
         height: 100%;
         display: flex;
         align-items: center;
         font-size: 1.8rem;
-        color: #999;
-        &:last-of-type {
-            a{
-                background-color: #A03C44;
-                color: #fff;
-            }
-        }
+        color: $mc02;
     }
 
     a {
@@ -85,51 +85,65 @@ nav {
         align-items: center;
         padding: 0 30px;
         height: 100%;
-    }
-    span {
-        transition: 0.25s ease-in-out;
-        position: relative;
 
-        &.active {
-            color: #a38a00;
-        }
-
-        &::before {
-            width: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            height: 1px;
-            background: #A03C44;
-            position: absolute;
-            bottom: -2px;
-            content: "";
-        }
-    }
-
-    &:hover {
         span {
-            color: #A03C44;
+            transition: 0.25s ease-in-out;
+            position: relative;
+
+            &.active {
+                color: $mc04;
+                &::before {
+                    width: 100%;
+                    transition: 0.25s ease-in-out;
+                }
+            }
 
             &::before {
-                width: 100%;
-                transition: 0.25s ease-in-out;
+                width: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 1px;
+                background: $mc04;
+                position: absolute;
+                bottom: -2px;
+                content: "";
             }
         }
+
+        &:hover {
+            span {
+                color: $mc04;
+
+                &::before {
+                    width: 100%;
+                    transition: 0.25s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+.ctaBtn {
+    background-color: $mc03;
+    color: $mc01!important;
+
+    &:hover {
+        background-color: $mc01;
     }
 }
 
 h1 {
     font-size: 6.4rem;
     font-weight: bold;
-    color: #666;
+    color: $mc02;
     margin-bottom: 15px;
 
     &+p {
         font-size: 3.2rem;
-        color: #a38a00;
+        color: $mc04;
 
         span {
-            color: #A03C44;
+            color: $mc03;
         }
     }
 }
@@ -139,7 +153,7 @@ h1 {
 h2 {
     font-size: 4.8rem;
     text-align: center;
-    color: #a38a00;
+    color: $mc04;
     margin-bottom: 40px;
     font-weight: bold;
     letter-spacing: 0.2em;
@@ -147,14 +161,14 @@ h2 {
     span {
         display: block;
         font-size: 1.6rem;
-        color: #999;
+        color: $mc02;
         margin-top: 10px;
         font-weight: normal;
     }
 
     &+p {
         font-size: 16px;
-        color: #666;
+        color: $mc02;
         text-align: center;
         line-height: 1.7;
     }
@@ -163,17 +177,17 @@ h2 {
 .works,
 .blog,
 .contact {
-    background-color: #F6F4EF;
+    background-color: $mc05;
 }
 
 footer {
-    background-color: #a38a00;
+    background-color: $mc04;
     padding: 15px 0;
     text-align: center;
     font-size: 1.2rem;
     line-height: 1;
     // font-weight: bold;
-    color: #fff;
+    color: $mc01;
 }
 
 .boxSection {
@@ -211,7 +225,7 @@ footer {
     max-width: 100%;
     width: 160px;
     transition: all 0.4s;
-    background-color: #fff;
+    background-color: $mc01;
 
     &:hover {
         box-shadow: 0 0 4px #aaa;
