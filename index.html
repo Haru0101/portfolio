@@ -96,21 +96,13 @@
         let scroll = new SmoothScroll('a[href*="#"]', {
             header: '[data-scroll-header]',
             easing: 'easeInOutCubic',
+            speed: 1200
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
     <script>
         let image = document.getElementsByClassName('parallax');
         new simpleParallax(image);
-    </script>
-    <script>
-        // function moveToSection(e) {
-        //     let activeElms = document.getElementsByClassName('active');
-        //     Array.prototype.forEach.call(activeElms, function (activeElm) {
-        //         activeElm.classList.remove('active');
-        //     });
-        //     e.target.classList.add('active');
-        // }
     </script>
     <script>
         function showIntroduction() {
