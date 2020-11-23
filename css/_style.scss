@@ -18,10 +18,11 @@ main {}
 }
 
 .top {
-    // height: calc(100vh - 80px);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: calc(100vh - 80px);
+    overflow: hidden;
     margin: 0px;
     padding: 80px 0 0 0;
 
@@ -31,15 +32,13 @@ main {}
 
     .imgWrap {
         width: 50%;
-        // height: calc(120vh - 80px);
+        height: 100%;
 
         img {
-            // height: calc(100vh - 80px);
-            // width: auto;
-            // object-fit: cover;
             width: 100%;
-            // height: 100%;
-            // padding: 80px 0 0 0;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
         }
     }
 }
@@ -92,6 +91,7 @@ nav {
 
             &.active {
                 color: $mc04;
+
                 &::before {
                     width: 100%;
                     transition: 0.25s ease-in-out;
@@ -125,7 +125,8 @@ nav {
 
 .ctaBtn {
     background-color: $mc03;
-    color: $mc01!important;
+    color: $mc01 !important;
+    transition: all 0.2s;
 
     &:hover {
         background-color: $mc01;
@@ -211,21 +212,24 @@ footer {
     // }
 }
 
-.blog {
+.blog,
+.contact {
     text-align: center;
 }
 
 .logoLink {
-    border-radius: 10px;
     box-shadow: 0 0 10px #ccc;
     display: inline-block;
-    padding: 15px 25px;
     margin-top: 100px;
-    // margin: 40px 0;
     max-width: 100%;
-    width: 160px;
     transition: all 0.4s;
     background-color: $mc01;
+    border-radius: 10px;
+
+    &.zenn {
+        padding: 15px 25px;
+        width: 160px;
+    }
 
     &:hover {
         box-shadow: 0 0 4px #aaa;
@@ -233,12 +237,41 @@ footer {
     }
 }
 
-.blogLogo {
+.logoImg {
     width: 100%;
+    vertical-align: bottom;
 }
 
 .skillGraph {
-    // background-color: #eee;
     border: solid 1px #eee;
     padding: 20px;
+}
+
+
+// アニメーション
+.vibration {
+    display: inline-block;
+    animation: vibration .1s infinite;
+}
+
+@keyframes vibration {
+    0% {
+        transform: translate(0px, 0px) rotateZ(0deg)
+    }
+
+    25% {
+        transform: translate(2px, 2px) rotateZ(1deg)
+    }
+
+    50% {
+        transform: translate(0px, 2px) rotateZ(0deg)
+    }
+
+    75% {
+        transform: translate(2px, 0px) rotateZ(-1deg)
+    }
+
+    100% {
+        transform: translate(0px, 0px) rotateZ(0deg)
+    }
 }
