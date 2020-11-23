@@ -10,6 +10,9 @@ $mc05: #F6F4EF;
 html {
     font-size: 62.5%;
 }
+body {
+    box-sizing: border-box;
+}
 
 main {}
 
@@ -89,14 +92,6 @@ nav {
             transition: 0.25s ease-in-out;
             position: relative;
 
-            &.active {
-                color: $mc04;
-
-                &::before {
-                    width: 100%;
-                    transition: 0.25s ease-in-out;
-                }
-            }
 
             &::before {
                 width: 0;
@@ -120,6 +115,16 @@ nav {
                 }
             }
         }
+        // &.active {
+        //     span {
+        //         color: $mc04;
+    
+        //         &::before {
+        //             width: 100%;
+        //             transition: 0.25s ease-in-out;
+        //         }
+        //     }
+        // }
     }
 }
 
@@ -127,10 +132,19 @@ nav {
     background-color: $mc03;
     color: $mc01 !important;
     transition: all 0.2s;
+    box-sizing: border-box;
+    border: 6px solid $mc03;
+    font-weight: bold;
 
     &:hover {
         background-color: $mc01;
     }
+
+    span {
+        &:before {
+        content: none;
+    }
+}
 }
 
 h1 {
@@ -142,6 +156,8 @@ h1 {
     &+p {
         font-size: 3.2rem;
         color: $mc04;
+        transition: opacity 1s;
+        opacity: 0;
 
         span {
             color: $mc03;
@@ -275,3 +291,21 @@ footer {
         transform: translate(0px, 0px) rotateZ(0deg)
     }
 }
+
+// タイピングエフェクト
+h1 {
+    // font-size: 2rem;
+    // text-align: center;
+    
+    &:after {
+      content: '';
+      border-right: 1px solid;
+      animation: flashing 1.2s linear infinite;
+    }
+  }
+  
+  @keyframes flashing {
+    0% {
+      opacity: 0;
+    }
+  } 

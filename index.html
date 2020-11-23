@@ -13,19 +13,21 @@
     <header data-scroll-header>
         <nav>
             <ul>
-                <li><a href="#" class="js-smooth-scroll"><span class="active">Top</span></a></li>
-                <li><a href="#works" class="js-smooth-scroll"><span>Works</span></a></li>
-                <li><a href="#skills" class="js-smooth-scroll"><span>Skills</span></a></li>
-                <li><a href="#blog" class="js-smooth-scroll"><span>Blog</span></a></li>
-                <li><a href="#profile" class="js-smooth-scroll"><span>Profile</span></a></li>
-                <li class="ctaWrap"><a href="#contact" class="js-smooth-scroll ctaBtn"><span>Contact</span></a></li>
+                <li><a onclick="moveToSection()" href="#" class="active js-smooth-scroll"><span>Top</span></a>
+                </li>
+                <li><a onclick="moveToSection()" href="#works" class="js-smooth-scroll"><span>Works</span></a></li>
+                <li><a onclick="moveToSection()" href="#skills" class="js-smooth-scroll"><span>Skills</span></a></li>
+                <li><a onclick="moveToSection()" href="#blog" class="js-smooth-scroll"><span>Blog</span></a></li>
+                <li><a onclick="moveToSection()" href="#profile" class="js-smooth-scroll"><span>Profile</span></a></li>
+                <li class="ctaWrap"><a onclick="moveToSection()" href="#contact"
+                        class="js-smooth-scroll ctaBtn"><span>Contact</span></a></li>
             </ul>
         </nav>
     </header>
     <section class="top">
         <div class="typoWrap">
-            <h1>Haruki Okuda</h1>
-            <p>I'm a <span>front-end engineer.</span></p>
+            <h1 id="typing"></h1>
+            <p id="sub">I'm a <span>front-end engineer.</span></p>
         </div>
         <div class="imgWrap">
             <img class="parallax" src="img/img_top.jpg" alt="トップ画像">
@@ -52,9 +54,9 @@
                 <h2>Skills<span>技術</span></h2>
                 <p>WEB制作に必要なHTML5, CSS3, JavaScriptをはじめ、<br>
                     アプリ開発のためのVue.jsやLaravelも学習しています。</p>
-                    <div class="skillGraph">
-                        スキルのグラフ
-                    </div>
+                <div class="skillGraph">
+                    スキルのグラフ
+                </div>
             </div>
         </section>
         <section id="blog" class="blog">
@@ -62,9 +64,9 @@
                 <h2>Blog<span>ブログ</span></h2>
                 <p>気になった技術をまとめたり、<br>
                     プログラミングスクールで教えている生徒に向けて書いた記事が中心です。</p>
-                    <a href="//zenn.dev/harryduck" class="logoLink zenn" target="_blank" rel="noopener">
-                        <img class="logoImg" src="img/logo_zenn.png" alt="Zennロゴ">
-                    </a>
+                <a href="//zenn.dev/harryduck" class="logoLink zenn" target="_blank" rel="noopener">
+                    <img class="logoImg" src="img/logo_zenn.png" alt="Zennロゴ">
+                </a>
             </div>
         </section>
         <section id="profile" class="profile">
@@ -80,9 +82,9 @@
                 <p>絶賛転職活動中です。<br>
                     興味を持っていただけた方は、お話だけでも構いません。<br>
                     お気軽にお問い合わせください。</p>
-                    <a href="mailto:haruki.for.01@gmail.com" class="logoLink vibration" target="_blank" rel="noopener">
-                        <img class="logoImg" src="img/logo_gmail.png" alt="Gmailロゴ">
-                    </a>
+                <a href="mailto:haruki.for.01@gmail.com" class="logoLink vibration" target="_blank" rel="noopener">
+                    <img class="logoImg" src="img/logo_gmail.png" alt="Gmailロゴ">
+                </a>
             </div>
         </section>
     </main>
@@ -91,7 +93,7 @@
     </footer>
     <script src="js/smooth-scroll.js"></script>
     <script>
-        let scroll = new SmoothScroll('a[href*="#"]',{
+        let scroll = new SmoothScroll('a[href*="#"]', {
             header: '[data-scroll-header]',
             easing: 'easeInOutCubic',
         });
@@ -100,6 +102,31 @@
     <script>
         let image = document.getElementsByClassName('parallax');
         new simpleParallax(image);
+    </script>
+    <script>
+        // function moveToSection(e) {
+        //     let activeElms = document.getElementsByClassName('active');
+        //     Array.prototype.forEach.call(activeElms, function (activeElm) {
+        //         activeElm.classList.remove('active');
+        //     });
+        //     e.target.classList.add('active');
+        // }
+    </script>
+    <script>
+        function showIntroduction() {
+            document.getElementById('sub').style.opacity = 1
+        };
+
+        // タイピングエフェクト
+        const typing = (element, sentence) => {
+            [...sentence].forEach((character, index) => {
+                setTimeout(() => {
+                    document.querySelector(element).textContent += character;
+                }, 100 * ++index);
+            });
+            setTimeout(showIntroduction, 1400);
+        }
+        typing('#typing', 'Haruki Okuda');
     </script>
 </body>
 
