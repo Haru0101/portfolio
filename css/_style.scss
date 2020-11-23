@@ -269,6 +269,12 @@ footer {
     vertical-align: bottom;
 }
 
+.skills {
+    h2+p{
+        margin-bottom: 20px;
+    }
+}
+
 .skillWrap {
     // border: solid 1px #eee;
     text-align: center;
