@@ -10,6 +10,7 @@ $mc05: #F6F4EF;
 html {
     font-size: 62.5%;
 }
+
 body {
     box-sizing: border-box;
 }
@@ -115,10 +116,11 @@ nav {
                 }
             }
         }
+
         // &.active {
         //     span {
         //         color: $mc04;
-    
+
         //         &::before {
         //             width: 100%;
         //             transition: 0.25s ease-in-out;
@@ -142,9 +144,9 @@ nav {
 
     span {
         &:before {
-        content: none;
+            content: none;
+        }
     }
-}
 }
 
 h1 {
@@ -181,7 +183,9 @@ h2 {
         color: $mc02;
         margin-top: 10px;
         font-weight: normal;
-        &:before, &:after {
+
+        &:before,
+        &:after {
             content: '―';
             display: inline-block;
             margin-right: 10px;
@@ -194,6 +198,7 @@ h2 {
         color: $mc02;
         text-align: center;
         line-height: 1.7;
+        margin-bottom: 40px;
     }
 }
 
@@ -242,7 +247,7 @@ footer {
 .logoLink {
     box-shadow: 0 0 10px #ccc;
     display: inline-block;
-    margin-top: 100px;
+    // margin-top: 100px;
     max-width: 100%;
     transition: all 0.4s;
     background-color: $mc01;
@@ -264,9 +269,17 @@ footer {
     vertical-align: bottom;
 }
 
-.skillGraph {
-    border: solid 1px #eee;
-    padding: 20px;
+.skillWrap {
+    // border: solid 1px #eee;
+    text-align: center;
+    // padding: 20px;
+
+    #skillChart {
+        display: inline-block !important;
+        width: 450px !important;
+        height: auto !important;
+        max-width: 100%;
+    }
 }
 
 
@@ -302,16 +315,16 @@ footer {
 h1 {
     // font-size: 2rem;
     // text-align: center;
-    
+
     &:after {
-      content: '';
-      border-right: 1px solid;
-      animation: flashing 1.2s linear infinite;
+        content: '';
+        border-right: 1px solid;
+        animation: flashing 1.2s linear infinite;
     }
-  }
-  
-  @keyframes flashing {
+}
+
+@keyframes flashing {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
-  } 
+}
