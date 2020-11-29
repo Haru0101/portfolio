@@ -7,6 +7,21 @@ $mc03: #A03C44;
 $mc04: #a38a00;
 $mc05: #F6F4EF;
 
+$sp: 768px; // スマホ
+$pc: 769px; // PC
+
+@mixin pc {
+    @media (min-width: ($pc)) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media (max-width: ($sp)) {
+        @content;
+    }
+}
+
 html {
     font-size: 62.5%;
 }
@@ -19,6 +34,9 @@ main {}
 
 .inner {
     padding: 120px 100px;
+    @include sp {
+        padding: 30px 15px;
+    }
 }
 
 .top {
