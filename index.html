@@ -179,7 +179,10 @@
     <script src="js/simpleParallax.min.js"></script>
     <script>
         let image = document.getElementsByClassName('parallax');
-        new simpleParallax(image);
+        new simpleParallax(image, {
+            scale: 1.8,
+        });
+
     </script>
     <script>
         function showIntroduction() {
