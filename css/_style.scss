@@ -4,8 +4,9 @@
 $mc01: #fff;
 $mc02: #666;
 $mc03: #A03C44;
-$mc04: #a38a00;
+$mc04: #cab32d;
 $mc05: #1a484c;
+$mc06: #ccc;
 
 $sp: 768px; // スマホ
 $pc: 769px; // PC
@@ -34,6 +35,7 @@ main {}
 
 .inner {
     padding: 120px 100px;
+
     @include sp {
         padding: 30px 15px;
     }
@@ -198,7 +200,7 @@ h2 {
     span {
         display: block;
         font-size: 1.6rem;
-        color: $mc02;
+        color: $mc06;
         margin-top: 10px;
         font-weight: normal;
 
@@ -220,10 +222,14 @@ h2 {
     }
 }
 
-.works,
-.blog,
-.contact {
+.inversion {
     background-color: $mc05;
+
+    h2 {
+        &+p {
+            color: $mc06;
+        }
+    }
 }
 
 footer {
@@ -288,7 +294,7 @@ footer {
 }
 
 .skills {
-    h2+p{
+    h2+p {
         margin-bottom: 20px;
     }
 }
@@ -351,4 +357,9 @@ h1 {
     0% {
         opacity: 0;
     }
+}
+
+// パララックス
+.simpleParallax {
+    height: 100%;
 }
