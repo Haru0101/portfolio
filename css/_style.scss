@@ -187,8 +187,6 @@ h1 {
     }
 }
 
-
-
 h2 {
     font-size: 4.8rem;
     text-align: center;
@@ -362,4 +360,13 @@ h1 {
 // パララックス
 .simpleParallax {
     height: 100%;
+}
+
+// スクロールスナップ
+.container {
+    scroll-snap-type: y mandatory;
+}
+
+.child {
+    scroll-snap-align: start;
 }
