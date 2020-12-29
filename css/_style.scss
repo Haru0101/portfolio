@@ -90,7 +90,9 @@ header {
     justify-content: flex-end;
     align-items: center;
     z-index: 2;
-
+    @include sp {
+        height: 80px;
+    }
 }
 
 nav {
@@ -101,7 +103,9 @@ nav {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        padding-left: 30px;
+        @include sp {
+            flex-wrap: wrap;
+        }
     }
 
     li {
@@ -110,6 +114,10 @@ nav {
         align-items: center;
         font-size: 1.8rem;
         color: $mc02;
+        @include sp {
+            width: calc(100% / 3);
+            height: 50%;
+        }
     }
 
     a {
