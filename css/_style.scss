@@ -400,25 +400,29 @@ h1 {
 }
 
 // timeline
-#timeline {
-    padding-left: 20px!important
-    ;
-    .content {
-        font-size: 14px;
-        letter-spacing: 0.02em;
-        line-height: 1.4;
-    }
+.timelineWrap {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    #timeline {
+        padding-left: 20px;
+        .content {
+            font-size: 14px;
+            letter-spacing: 0.02em;
+            line-height: 1.4;
+        }
 
-    .date {
-        font-size: 14px;
-        left: -80px;
-    }
+        .date {
+            font-size: 14px;
+            left: -80px;
+        }
 
-    label {
-        font-size: 16px;
-    }
+        label {
+            font-size: 16px;
+        }
 
-    .circle {
-        left: -34px;
+        .circle {
+            left: -34px;
+        }
     }
 }
