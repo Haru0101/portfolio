@@ -401,6 +401,8 @@ h1 {
 
 // timeline
 #timeline {
+    padding-left: 20px!important
+    ;
     .content {
         font-size: 14px;
         letter-spacing: 0.02em;
@@ -409,6 +411,14 @@ h1 {
 
     .date {
         font-size: 14px;
-        left: -90px;
+        left: -80px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    .circle {
+        left: -34px;
     }
 }
