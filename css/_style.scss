@@ -92,6 +92,8 @@ header {
     z-index: 2;
     @include sp {
         height: 80px;
+        top: unset;
+        bottom: 0;
     }
 }
 
