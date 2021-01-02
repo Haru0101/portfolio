@@ -7,6 +7,7 @@ $mc03: #A03C44;
 $mc04: #cab32d;
 $mc05: #1a484c;
 $mc06: #ccc;
+$mc07: #999;
 
 $sp: 768px; // スマホ
 $pc: 769px; // PC
@@ -229,7 +230,7 @@ h2 {
     span {
         display: block;
         font-size: 16px;
-        color: $mc06;
+        color: $mc07;
         margin-top: 10px;
         font-weight: normal;
         @include sp {
