@@ -166,6 +166,11 @@
     <footer>
         <p><small>2020 &copy; Haruki Okuda</small></p>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () =>{
+            document.querySelector('.top').style.height = `${window.innerHeight}px`
+        });
+    </script>
     <script src="js/smooth-scroll.js"></script>
     <script>
         let scroll = new SmoothScroll('a[href*="#"]', {
