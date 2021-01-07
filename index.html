@@ -180,17 +180,25 @@
         <p><small>2020 &copy; Haruki Okuda</small></p>
     </footer>
     <script>
-        document.addEventListener('DOMContentLoaded', () =>{
+        document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('.top').style.height = `${window.innerHeight}px`
         });
     </script>
     <script src="js/smooth-scroll.js"></script>
     <script>
-        let scroll = new SmoothScroll('a[href*="#"]', {
-            header: '[data-scroll-header]',
-            easing: 'easeInOutCubic',
-            speed: 600
-        });
+        const mq = window.innerWidth;
+        if (mq <= 834) {
+            const scroll = new SmoothScroll('a[href*="#"]', {
+                header: '[data-scroll-header]',
+                easing: 'easeInOutCubic',
+                speed: 600
+            });
+        } else {
+            const scroll = new SmoothScroll('a[href*="#"]', {
+                easing: 'easeInOutCubic',
+                speed: 400
+            });
+        }
     </script>
     <script src="js/simpleParallax.min.js"></script>
     <script>
@@ -198,7 +206,6 @@
         new simpleParallax(image, {
             scale: 1.8,
         });
-
     </script>
     <script>
         function showIntroduction() {
