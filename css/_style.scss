@@ -102,6 +102,9 @@ header {
 
 nav {
     height: 100%;
+    @include sp {
+        width: 100%;
+    }
 
     ul {
         height: 100%;
@@ -130,6 +133,11 @@ nav {
         align-items: center;
         padding: 0 30px;
         height: 100%;
+        @include sp {
+            padding: 0;
+            width: 100%;
+            justify-content: center;
+        }
 
         span {
             transition: 0.25s ease-in-out;
