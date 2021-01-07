@@ -227,39 +227,39 @@
         });
     </script>
     <script>
-        let options = {
-            scale: {
-                angleLines: {
-                    display: false,
-                },
-                ticks: {
-                    suggestedMin: 0,
-                    suggestedMax: 100,
-                    stepSize: 20,
-                    fontSize: 22
-                },
-                pointLabels: {
-                    fontSize: 28 //フォントサイズ
-                },
-            },
-            legend: {
-                display: false
-            }
-        };
+        // let options = {
+        //     scale: {
+        //         angleLines: {
+        //             display: false,
+        //         },
+        //         ticks: {
+        //             suggestedMin: 0,
+        //             suggestedMax: 100,
+        //             stepSize: 20,
+        //             fontSize: 22
+        //         },
+        //         pointLabels: {
+        //             fontSize: 28 //フォントサイズ
+        //         },
+        //     },
+        //     legend: {
+        //         display: false
+        //     }
+        // };
 
-        let data = {
-            labels: ['HTML, CSS', 'JavaScript', 'Vue.js', 'Scss', 'WordPress'],
-            datasets: [{
-                data: [90, 80, 75, 85, 85],
-                backgroundColor: 'rgba(163, 138, 0, 0.2)'
-            }]
-        }
-        let ctx = document.getElementById('skillChart');
-        var myRadarChart = new Chart(ctx, {
-            type: 'radar',
-            data: data,
-            options: options
-        });
+        // let data = {
+        //     labels: ['HTML, CSS', 'JavaScript', 'Vue.js', 'Scss', 'WordPress'],
+        //     datasets: [{
+        //         data: [90, 80, 75, 85, 85],
+        //         backgroundColor: 'rgba(163, 138, 0, 0.2)'
+        //     }]
+        // }
+        // let ctx = document.getElementById('skillChart');
+        // var myRadarChart = new Chart(ctx, {
+        //     type: 'radar',
+        //     data: data,
+        //     options: options
+        // });
     </script>
 
 </body>
