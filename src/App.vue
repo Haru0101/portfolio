@@ -177,5 +177,4 @@
 <style>
   @import "../src/css/timeline.css";
   @import "../src/css/common.css";
-
 </style>
