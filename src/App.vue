@@ -1,18 +1,6 @@
 <template>
   <div id="app">
-    <header data-scroll-header>
-      <nav>
-        <ul>
-          <li><a href="#" class="active js-smooth-scroll"><span>Top</span></a>
-          </li>
-          <li><a href="#works" class="js-smooth-scroll"><span>Works</span></a></li>
-          <li><a href="#skills" class="js-smooth-scroll"><span>Skills</span></a></li>
-          <li><a href="#blog" class="js-smooth-scroll"><span>Blog</span></a></li>
-          <li><a href="#profile" class="js-smooth-scroll"><span>Profile</span></a></li>
-          <li class="ctaWrap"><a href="#contact" class="js-smooth-scroll ctaBtn"><span>Contact</span></a></li>
-        </ul>
-      </nav>
-    </header>
+    <Header></Header>
     <section class="top">
       <div class="typoWrap">
         <h1 id="typing"></h1>
@@ -164,73 +152,25 @@
         </div>
       </section>
     </main>
-    <footer>
-      <p><small>2020 &copy; Haruki Okuda</small></p>
-    </footer>
+   <Footer></Footer>
   </div>
 </template>
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelector('.top').style.height = `${window.innerHeight}px`
-})
-</script>
-<script src="js/smooth-scroll.js"></script>
-<script>
-  const mq = window.innerWidth;
-  if (mq >= 834) {
-    const scroll = new SmoothScroll('a[href*="#"]', {
-      header: '[data-scroll-header]',
-      easing: 'easeInOutCubic',
-      speed: 600
-    });
-  } else {
-    const scroll = new SmoothScroll('a[href*="#"]', {
-      easing: 'easeInOutCubic',
-      speed: 400
-    });
-  }
-
-</script>
-<script src="js/simpleParallax.min.js"></script>
-<script>
-  let image = document.getElementsByClassName('parallax');
-  new simpleParallax(image, {
-    scale: 1.8,
-  });
-
-</script>
-<script>
-  function showIntroduction() {
-    document.getElementById('sub').style.opacity = 1
-  };
-
-  // タイピングエフェクト
-  const typing = (element, sentence) => {
-    [...sentence].forEach((character, index) => {
-      setTimeout(() => {
-        document.querySelector(element).textContent += character;
-      }, 100 * ++index);
-    });
-    setTimeout(showIntroduction, 1400);
-  }
-
-  typing('#typing', 'Haruki Okuda');
-
-</script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
-        integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
-        crossorigin="anonymous"></script> -->
-<script src="js/scrollreveal.js"></script>
-<script>
-  ScrollReveal().reveal('.inner', {
-    duration: 1000
-  });
-
-</script>
-<script>
+  import Header from './components/Header';
+  import Footer from './components/Footer';
   export default {
     name: 'App',
-    components: {}
+    components: {
+      Header,
+      Footer
+    },
+    mounted() {
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('.top').style.height = `${window.innerHeight}px`
+      })
+    },
+    methods: {
+    }
   }
 
 </script>
