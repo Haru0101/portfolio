@@ -175,6 +175,6 @@
 
 </script>
 <style>
-  @import "../src/css/timeline.css";
-  @import "../src/css/common.css";
+  @import "../src/assets/scss/timeline.css";
+  @import "../src/assets/scss/_style.scss";
 </style>
