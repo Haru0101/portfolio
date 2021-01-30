@@ -59,7 +59,7 @@ nav {
         height: 100%;
         display: flex;
         align-items: center;
-        font-size: 1.8rem;
+        font-size: 18px;
         color: $mc02;
         @include sp {
             width: calc(100% / 3);
