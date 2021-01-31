@@ -41,7 +41,6 @@
     height: calc(100vh - 80px);
     overflow: hidden;
     margin: 0px;
-    padding: 80px 0 0 0;
 
     @include sp {
       justify-content: center;
