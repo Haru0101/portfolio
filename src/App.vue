@@ -24,31 +24,11 @@
       Links
     },
     mounted() {
-      this.typeEffect();
-
       document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.top').style.height = `${window.innerHeight}px`
       })
 
     },
-    methods: {
-      typeEffect() {
-        // タイピングエフェクト
-        const typing = (element, sentence) => {
-          [...sentence].forEach((character, index) => {
-            setTimeout(() => {
-              document.querySelector(element).textContent += character;
-            }, 100 * ++index);
-          });
-          setTimeout(this.showIntroduction, 1400);
-        }
-
-        typing('#typing', 'Haruki Okuda');
-      },
-      showIntroduction() {
-        document.getElementById('sub').style.opacity = 1
-      },
-    }
   }
 
 </script>
