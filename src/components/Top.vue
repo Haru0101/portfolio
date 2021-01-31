@@ -48,10 +48,7 @@ import Menu from './Menu';
     margin: 0px;
 
     @include sp {
-      justify-content: center;
-      padding: 0;
-      height: 100vh;
-      flex-wrap:wrap;
+      flex-direction: column;
     }
 
     .typoWrap {
@@ -60,7 +57,11 @@ import Menu from './Menu';
 
       @include sp {
         width: 100%;
-        padding-left: 0px;
+        height: calc(100% - 80px);
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
     }
   }
@@ -72,6 +73,7 @@ import Menu from './Menu';
 
     @include sp {
       font-size: 40px;
+      text-align: center;
     }
 
     &+p {
