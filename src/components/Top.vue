@@ -43,7 +43,7 @@ import Menu from './Menu';
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: calc(100vh - 80px);
+    height: 100vh;
     overflow: hidden;
     margin: 0px;
 
@@ -51,12 +51,15 @@ import Menu from './Menu';
       justify-content: center;
       padding: 0;
       height: 100vh;
+      flex-wrap:wrap;
     }
 
     .typoWrap {
       padding-left: 100px;
+      width: calc(100% - 200px);
 
       @include sp {
+        width: 100%;
         padding-left: 0px;
       }
     }
