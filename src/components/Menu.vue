@@ -1,5 +1,5 @@
 <template>
-  <header data-scroll-header>
+  <header>
     <nav>
       <ul>
         <li><a href="#" class="active"><span>Top</span></a>

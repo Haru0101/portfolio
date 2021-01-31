@@ -4,10 +4,15 @@
       <h1 id="typing"></h1>
       <p id="sub">I'm a <span>front-end engineer.</span></p>
     </div>
+    <Menu></Menu>
   </section>
 </template>
 <script>
+import Menu from './Menu';
   export default {
+    components: {
+      Menu
+    },
     mounted() {
       this.typeEffect();
     },
