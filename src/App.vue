@@ -1,10 +1,11 @@
 <template>
   <div id="app">
-    <Top></Top>
+    <!-- <Top></Top>
     <Works></Works>
     <About></About>
     <Links></Links>
-    <Menu></Menu>
+    <Menu></Menu> -->
+    <router-view></router-view>
   </div>
 </template>
 <script>
