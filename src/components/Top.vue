@@ -4,15 +4,10 @@
       <h1 id="typing"></h1>
       <p id="sub">I'm a <span>front-end engineer.</span></p>
     </div>
-    <Menu></Menu>
   </section>
 </template>
 <script>
-import Menu from './Menu';
   export default {
-    components: {
-      Menu
-    },
     mounted() {
       this.typeEffect();
     },
@@ -39,32 +34,20 @@ import Menu from './Menu';
 
 </script>
 <style lang="scss" scoped>
- .top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0px;
+  .top {
+    width: calc(100% - 200px);
+    padding-left: 100px;
 
     @include sp {
+      width: 100%;
+      height: calc(100% - 80px);
+      padding-left: 0;
+      display: flex;
       flex-direction: column;
-    }
-
-    .typoWrap {
-      padding-left: 100px;
-      width: calc(100% - 200px);
-
-      @include sp {
-        width: 100%;
-        height: calc(100% - 80px);
-        padding-left: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
+      justify-content: center;
     }
   }
+
   h1 {
     font-size: 64px;
     font-weight: bold;
@@ -92,4 +75,5 @@ import Menu from './Menu';
       }
     }
   }
+
 </style>

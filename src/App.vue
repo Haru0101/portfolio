@@ -6,26 +6,19 @@
     <Links></Links>
     <Menu></Menu> -->
     <router-view></router-view>
+    <Menu></Menu>
   </div>
 </template>
 <script>
-  import Top from './components/Top';
   import Menu from './components/Menu';
-  import Works from './components/Works';
-  import About from './components/About';
-  import Links from './components/Links';
   export default {
     name: 'App',
     components: {
-      Top,
       Menu,
-      Works,
-      About,
-      Links
     },
     mounted() {
       document.addEventListener('DOMContentLoaded', () => {
-        document.querySelector('.top').style.height = `${window.innerHeight}px`
+        document.querySelector('#app').style.height = `${window.innerHeight}px`
       })
 
     },
@@ -33,6 +26,18 @@
 
 </script>
 <style lang="scss">
+#app {
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0px;
+
+    @include sp {
+      flex-direction: column;
+    }
+}
   .inner {
     padding: 120px 100px;
 
