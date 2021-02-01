@@ -2,16 +2,16 @@
     <nav>
       <ul>
         <li>
-          <router-link to="/" class="active"><span>Top</span></router-link>
+          <router-link to="/" class="active"><span>TOP</span></router-link>
         </li>
         <li>
-          <router-link to="/works"><span>Works</span></router-link>
+          <router-link to="/works"><span>WORKS</span></router-link>
         </li>
         <li>
-          <router-link to="/about"><span>About</span></router-link>
+          <router-link to="/about"><span>ABOUT</span></router-link>
         </li>
         <li class="ctaWrap">
-          <router-link to="/links"><span>Links</span></router-link>
+          <router-link to="/links"><span>LINKS</span></router-link>
         </li>
       </ul>
     </nav>
