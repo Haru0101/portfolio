@@ -52,6 +52,7 @@
     font-weight: bold;
     color: $mc03;
     margin-bottom: 15px;
+    margin-bottom: 0;
 
     @include sp {
       font-size: 40px;

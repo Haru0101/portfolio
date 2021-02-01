@@ -1,6 +1,11 @@
 h1 {
-    font-size: 36px;
-    font-weight: bold;
-    display: inline-block;
-    background: linear-gradient(transparent 50%, $mc02 50%);
-  }
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 60px;
+  display: inline-block;
+  background: linear-gradient(transparent 50%, $mc02 50%);
+}
+
+p {
+  line-height: 1.8;
+}
