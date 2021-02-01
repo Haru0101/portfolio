@@ -9,3 +9,55 @@ h1 {
 p {
   line-height: 1.8;
 }
+
+
+.snsBtn {
+  display: block;
+  width: 320px;
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  border: 1px solid #000000;
+  padding-bottom: 14px;
+  padding-top: 14px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-transition: .3s;
+  transition: .3s;
+  line-height: 1;
+  height: 45px;
+  margin-right: auto;
+  margin-left: auto;
+
+  &::before {
+    content: "";
+    float: left;
+    width: 320px;
+    height: 1px;
+    position: absolute;
+    border-bottom: 1px solid #1a1311;
+    bottom: -4px;
+    left: 2px;
+    transition: .3s;
+  }
+
+  &::after {
+    content: "";
+    float: left;
+    width: 1px;
+    height: 45px;
+    position: absolute;
+    border-right: 1px solid #1a1311;
+    bottom: -4px;
+    right: -4px;
+    transition: .3s;
+  }
+
+  &:hover {
+    text-decoration: none;
+    transform: translate3d(3px, 3px, 0);
+    opacity: 1;
+  }
+}
