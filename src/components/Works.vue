@@ -1,12 +1,10 @@
 <template>
-  <section id="works" class="works">
-    <div class="inner">
+  <main>
       <h1>Works</h1>
       <!-- <p>趣味で作ったPWAやサイトなどです。<br>
                     使用言語はJavaScriptと、そのフレームワークが中心です。</p> -->
       <p>準備中</p>
-    </div>
-  </section>
+  </main>
 </template>
 <script>
   export default {

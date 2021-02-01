@@ -1,10 +1,10 @@
 <template>
-  <section class="top">
+  <main class="top">
     <div class="typoWrap">
       <h1 id="typing"></h1>
       <p id="sub">I'm a <span>front-end engineer.</span></p>
     </div>
-  </section>
+  </main>
 </template>
 <script>
   export default {
@@ -35,14 +35,14 @@
 </script>
 <style lang="scss" scoped>
   .top {
-    width: calc(100% - 200px);
     padding-left: 100px;
+    display: flex;
+    align-items: center;
 
     @include sp {
       width: 100%;
       height: calc(100% - 80px);
       padding-left: 0;
-      display: flex;
       flex-direction: column;
       justify-content: center;
     }

@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="about">
+  <main id="about" class="about">
       <h1>About</h1>
       <p>WEB制作に必要なHTML5, CSS3, JavaScriptをはじめ、<br>
         アプリ開発のためのVue.jsも書きます。</p>
@@ -8,7 +8,7 @@
       <a href="" class="snsBtn">ボタン</a>
       <p>私のライフヒストリーをかんたんにまとめてみました。<br>
         ミニマリストでなんでも効率化しがちです。</p>
-  </section>
+  </main>
 </template>
 <script>
   export default {
