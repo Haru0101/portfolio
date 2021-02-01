@@ -46,12 +46,11 @@
       flex-direction: column;
       justify-content: center;
     }
-  }
 
-  h1 {
+     h1 {
     font-size: 64px;
     font-weight: bold;
-    color: $mc02;
+    color: $mc03;
     margin-bottom: 15px;
 
     @include sp {
@@ -61,7 +60,7 @@
 
     &+p {
       font-size: 32px;
-      color: $mc04;
+      color: $mc02;
       transition: opacity 1s;
       opacity: 0;
 
@@ -71,9 +70,12 @@
       }
 
       span {
-        color: $mc03;
+        color: $mc04;
       }
     }
   }
+  }
+
+ 
 
 </style>

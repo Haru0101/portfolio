@@ -1,5 +1,4 @@
 <template>
-  <header>
     <nav>
       <ul>
         <li>
@@ -16,23 +15,23 @@
         </li>
       </ul>
     </nav>
-  </header>
 </template>
 <script>
   export default {}
 
 </script>
 <style lang="scss" scoped>
-  header {
+  nav {
     font-family: "Yu Gothic", "游ゴシック", "Work Sans", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
     opacity: 0.9;
-    background-color: $mc01;
+    background-color: $mc02;
     width: 200px;
     z-index: 2;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: $mc03;
 
     @include sp {
       width: 100%;
@@ -40,12 +39,9 @@
     }
   }
 
-  nav {
-    width: 100%;
-    height: auto;
 
     ul {
-      height: 100%;
+      height: auto;
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -61,7 +57,8 @@
       display: flex;
       align-items: center;
       font-size: 18px;
-      color: $mc02;
+      font-weight: 600;
+      color: $mc03;
 
       @include sp {
         width: calc(100% / 3);
@@ -92,7 +89,7 @@
           left: 50%;
           transform: translateX(-50%);
           height: 1px;
-          background: $mc04;
+          background: $mc03;
           position: absolute;
           bottom: -2px;
           content: "";
@@ -101,7 +98,7 @@
 
       &:hover {
         span {
-          color: $mc04;
+          color: $mc03;
 
           &::before {
             width: 100%;
@@ -110,7 +107,6 @@
         }
       }
     }
-  }
 
   // .ctaBtn {
   //     background-color: $mc03;
