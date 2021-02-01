@@ -1,7 +1,7 @@
 <template>
   <section id="works" class="works">
     <div class="inner">
-      <h1>Works<span>制作物</span></h1>
+      <h1>Works</h1>
       <!-- <p>趣味で作ったPWAやサイトなどです。<br>
                     使用言語はJavaScriptと、そのフレームワークが中心です。</p> -->
       <p>準備中</p>
