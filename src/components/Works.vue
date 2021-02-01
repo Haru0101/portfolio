@@ -1,5 +1,5 @@
 <template>
-  <section id="works" class="works inversion">
+  <section id="works" class="works">
     <div class="inner">
       <h1>Works<span>制作物</span></h1>
       <!-- <p>趣味で作ったPWAやサイトなどです。<br>

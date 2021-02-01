@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="contact inversion">
+  <section id="contact" class="contact">
     <div class="inner">
       <h1>Contact<span>お問い合わせ</span></h1>
       <p>お気軽にお問い合わせください。</p>
