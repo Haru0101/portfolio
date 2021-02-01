@@ -16,7 +16,6 @@ p {
   line-height: 1.8;
 }
 
-
 .snsBtn {
   display: block;
   width: 320px;
@@ -34,8 +33,7 @@ p {
   transition: .3s;
   line-height: 1;
   height: 45px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 40px auto;
 
 
   &::before {
