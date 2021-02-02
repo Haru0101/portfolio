@@ -38,6 +38,7 @@
     padding-left: 100px;
     display: flex;
     align-items: center;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 
     @include sp {
       width: 100%;
@@ -53,6 +54,7 @@
     color: $mc03;
     margin-bottom: 15px;
     margin-bottom: 0;
+    letter-spacing: 0.02em;
 
     @include sp {
       font-size: 40px;

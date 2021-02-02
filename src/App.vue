@@ -1,10 +1,5 @@
 <template>
   <div id="app">
-    <!-- <Top></Top>
-    <Works></Works>
-    <About></About>
-    <Links></Links>
-    <Menu></Menu> -->
     <router-view></router-view>
     <Menu></Menu>
   </div>
@@ -20,7 +15,6 @@
       document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('#app').style.height = `${window.innerHeight}px`
       })
-
     },
   }
 

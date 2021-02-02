@@ -22,7 +22,7 @@
 </script>
 <style lang="scss" scoped>
   nav {
-    font-family: "Yu Gothic", "游ゴシック", "Work Sans", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
     opacity: 0.9;
     width: 200px;
     z-index: 2;
