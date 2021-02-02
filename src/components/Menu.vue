@@ -24,7 +24,6 @@
   nav {
     font-family: "Yu Gothic", "游ゴシック", "Work Sans", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
     opacity: 0.9;
-    background-color: $mc02;
     width: 200px;
     z-index: 2;
     height: 100%;
