@@ -9,12 +9,20 @@ html{
 
 main {
   position: relative;
+  max-width: 800px;
   width: calc(100% - 200px);
   height: 100%;
   padding: 80px 60px;
-  background-color: #fff;
+  // background-color: #fff;
+  backdrop-filter: blur(12px);
+  background-color: rgba(233, 235, 242 ,0.4);
+  // box-shadow: rgb(0 0 0 / 30%) 2px 8px 8px;
+  border-width: 0px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.4) rgba(40, 40, 40, 0.35) rgba(40, 40, 40, 0.35) rgba(255, 255, 255, 0.4);
   @include sp {
     width: 100%;
+    height: calc(100% - 80px);
     padding: 30px;
   }
 }
@@ -30,6 +38,10 @@ h1 {
   position: absolute;
   top: -30px;
   left: 30px;
+  @include sp {
+    position: static;
+    font-size: 40px;
+  }
 }
 
 p {

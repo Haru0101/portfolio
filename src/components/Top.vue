@@ -42,7 +42,6 @@
 
     @include sp {
       width: 100%;
-      height: calc(100% - 80px);
       padding-left: 0;
       flex-direction: column;
       justify-content: center;
@@ -65,7 +64,6 @@
 
       &+p {
         font-size: 32px;
-        color: $mc02;
         transition: opacity 1s;
         opacity: 0;
 
