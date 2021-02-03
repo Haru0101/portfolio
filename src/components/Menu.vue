@@ -46,6 +46,7 @@
       flex-direction: column;
 
       @include sp {
+        height: 100%;
         flex-direction: row;
       }
     }
@@ -60,7 +61,7 @@
 
       @include sp {
         width: calc(100% / 3);
-        height: 50%;
+        height: 100%;
       }
     }
 
@@ -76,7 +77,9 @@
       @include sp {
         padding: 0;
         width: 100%;
-        justify-content: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
       }
 
       span {

@@ -46,7 +46,7 @@
 
     @include sp {
       flex-direction: column;
-      padding: 20px;
+      padding: 20px 20px 0px 20px;
     }
 }
 
