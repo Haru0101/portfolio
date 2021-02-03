@@ -23,7 +23,6 @@
 <style lang="scss" scoped>
   nav {
     font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-    opacity: 0.9;
     width: 200px;
     z-index: 2;
     height: 100%;
@@ -66,11 +65,13 @@
     }
 
     a {
-      display: flex;
-      align-items: center;
+      display: block;
+      text-align: center;
       padding: 0 30px;
       height: 100%;
       padding: 30px 0;
+      width: 200px;
+
 
       @include sp {
         padding: 0;
@@ -106,24 +107,4 @@
         }
       }
     }
-
-  // .ctaBtn {
-  //     background-color: $mc03;
-  //     color: $mc01 !important;
-  //     transition: all 0.2s;
-  //     box-sizing: border-box;
-  //     border: 6px solid $mc03;
-  //     font-weight: bold;
-
-  //     &:hover {
-  //         background-color: $mc01;
-  //     }
-
-  //     span {
-  //         &:before {
-  //             content: none;
-  //         }
-  //     }
-  // }
-
 </style>

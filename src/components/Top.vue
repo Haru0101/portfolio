@@ -46,39 +46,40 @@
       padding-left: 0;
       flex-direction: column;
       justify-content: center;
+      padding: 0;
     }
 
-     h1 {
-    font-size: 64px;
-    font-weight: bold;
-    color: $mc03;
-    margin-bottom: 15px;
-    margin-bottom: 0;
-    letter-spacing: 0.02em;
-
-    @include sp {
-      font-size: 40px;
-      text-align: center;
-    }
-
-    &+p {
-      font-size: 32px;
-      color: $mc02;
-      transition: opacity 1s;
-      opacity: 0;
+    h1 {
+      position: static;
+      font-size: 64px;
+      font-weight: bold;
+      color: $mc03;
+      margin-bottom: 15px;
+      margin-bottom: 0;
+      letter-spacing: 0.02em;
 
       @include sp {
+        font-size: 40px;
         text-align: center;
-        font-size: 20px;
       }
 
-      span {
-        color: $mc04;
+      &+p {
+        font-size: 32px;
+        color: $mc02;
+        transition: opacity 1s;
+        opacity: 0;
+
+        @include sp {
+          text-align: center;
+          font-size: 20px;
+          padding-right: 5px;
+        }
+
+        span {
+          color: $mc04;
+        }
       }
     }
   }
-  }
-
- 
 
 </style>
