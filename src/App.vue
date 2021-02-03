@@ -26,10 +26,13 @@
     justify-content: space-between;
     height: 100vh;
     overflow: hidden;
+    padding: 120px 0px 120px 120px;
     margin: 0px;
+    background-color: $mc01;
 
     @include sp {
       flex-direction: column;
+      padding: 15px;
     }
 }
 </style>
