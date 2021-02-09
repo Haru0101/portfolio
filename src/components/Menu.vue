@@ -100,6 +100,8 @@
       }
 
       &:hover {
+        opacity: 0.4;
+        transition: 0.15s opacity;
         span {
           color: $mc03;
 
