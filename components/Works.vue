@@ -6,3 +6,13 @@
       <p>準備中</p>
   </main>
 </template>
+<script>
+import { defineComponent } from '@vue/composition-api'
+
+export default defineComponent({
+  setup() {
+    
+  },
+})
+</script>
+
