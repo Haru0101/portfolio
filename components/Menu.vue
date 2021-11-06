@@ -16,7 +16,6 @@
       </ul>
     </nav>
 </template>
-<!-- 
 <style lang="scss" scoped>
   nav {
     font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
@@ -65,7 +64,6 @@
     a {
       display: block;
       text-align: center;
-      padding: 0 30px;
       height: 100%;
       padding: 30px 0;
       width: 200px;
@@ -110,4 +108,3 @@
       }
     }
 </style>
--->

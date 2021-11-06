@@ -18,12 +18,6 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-
-  // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    { src: '~/assets/css/style.scss', lang: 'scss' },
-  ],
-
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
   ],
@@ -39,7 +33,19 @@ export default {
     '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/style-resources',
   ],
+
+   // Global CSS: https://go.nuxtjs.dev/config-css
+  //  css: [
+  //   { src: '~/assets/css/style.scss', lang: 'scss' },
+  // ],
+  styleResources: {
+    scss: [
+      '~/assets/css/reset.scss',
+      '~/assets/css/style.scss',
+    ]
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
