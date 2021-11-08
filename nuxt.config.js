@@ -23,7 +23,7 @@ export default {
   ],
 
   env: {
-    baseUrl: '/portfolio'
+    baseUrl: 'portfolio'
   },
 
   // Auto import components: https://go.nuxtjs.dev/config-components
