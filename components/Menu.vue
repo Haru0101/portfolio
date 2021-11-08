@@ -4,14 +4,14 @@
         <li>
           <router-link to="/" class="active"><span>TOP</span></router-link>
         </li>
+        <li>
+          <router-link to="/about"><span>ABOUT</span></router-link>
+        </li>
         <!-- <li>
           <router-link to="/works"><span>WORKS</span></router-link>
         </li> -->
         <li>
           <router-link to="/articles"><span>ARTICLES</span></router-link>
-        </li>
-        <li>
-          <router-link to="/about"><span>ABOUT</span></router-link>
         </li>
         <li class="ctaWrap">
           <router-link to="/links"><span>LINKS</span></router-link>
