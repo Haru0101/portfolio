@@ -22,6 +22,10 @@ export default {
   plugins: [
   ],
 
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+  },
+
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
