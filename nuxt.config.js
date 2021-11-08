@@ -53,9 +53,5 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    index: 'docs/index.html',
-  },
-  generate: {
-    index: 'docs/index.html',
   }
 }
