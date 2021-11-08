@@ -2,7 +2,7 @@
     <nav>
       <ul>
         <li>
-          <router-link to="/" class="active"><span>TOP</span></router-link>
+          <router-link to="/" class="active"><span>TEST</span></router-link>
         </li>
         <li>
           <router-link to="/about"><span>ABOUT</span></router-link>
