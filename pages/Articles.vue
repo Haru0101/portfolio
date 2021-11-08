@@ -18,3 +18,13 @@
     </div>
   </main>
 </template>
+<style lang="scss" scoped>
+ul {
+  margin: 40px 0 0;
+}
+li {
+  margin-bottom: 20px;
+  text-decoration: underline;
+  list-style: inside;
+}
+</style>
