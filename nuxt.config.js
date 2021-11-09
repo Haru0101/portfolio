@@ -72,5 +72,10 @@ export default {
     extend (config) {
       config.output.publicPath = '/portfolio/'
     }
+  },
+  generate: {
+    extend (config) {
+      config.output.publicPath = '/portfolio/'
+    }
   } 
 }
