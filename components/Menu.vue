@@ -60,6 +60,7 @@
 
       @include sp {
         width: calc(100% / 3);
+        font-size: 14px;
         height: 100%;
       }
     }
