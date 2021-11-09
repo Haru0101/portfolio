@@ -27,5 +27,8 @@ li {
   margin-bottom: 20px;
   text-decoration: underline;
   list-style: inside;
+  @include sp {
+    line-height: 1.6;
+  }
 }
 </style>
