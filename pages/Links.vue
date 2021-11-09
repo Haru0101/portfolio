@@ -2,7 +2,7 @@
   <main id="contact" class="contact">
     <div class="inner">
       <h1>LINKS</h1>
-      <p>お気軽にお問い合わせください。</p>
+      <p>お気軽にお問い合わせください</p>
       <div class="btnWrap">
         <a href="https://twitter.com/harryduck00" class="snsBtn" target="_blank" rel="noopener">Twitter:
           @harryduck00</a>
