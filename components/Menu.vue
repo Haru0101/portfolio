@@ -11,7 +11,7 @@
           <router-link to="/works"><span>WORKS</span></router-link>
         </li> -->
         <li>
-          <router-link to="/articles"><span>ARTICLES</span></router-link>
+          <router-link to="/entries"><span>ENTRIES</span></router-link>
         </li>
         <li class="ctaWrap">
           <router-link to="/links"><span>LINKS</span></router-link>

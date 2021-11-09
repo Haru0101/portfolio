@@ -1,7 +1,7 @@
 <template>
   <main id="contact" class="contact">
     <div class="inner">
-      <h1>ARTICLES</h1>
+      <h1>ENTRIES</h1>
       <p>書いた記事の一部をご紹介します</p>
       <h2>技術記事</h2>
       <ul>
