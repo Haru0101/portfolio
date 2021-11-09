@@ -3,7 +3,6 @@
     <div class="inner">
       <h1>ENTRIES</h1>
       <p>書いた記事の一部をご紹介します</p>
-      <h2>技術記事</h2>
       <ul>
         <li><a href="https://zenn.dev/harryduck/articles/c4afcbf96c6b74" target="_blank"
             rel="noopener">VueでiOSの設定画面みたいなtoggleボタンをかんたんに作る</a></li>
