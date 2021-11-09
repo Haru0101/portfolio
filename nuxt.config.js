@@ -3,12 +3,12 @@ export default {
   target: 'static',
 
   // router: {
-  //   base: '/portfolio/'
+  //   base: 'portfolio'
   // },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Haruki Okuda',
+    title: 'portfolio',
     htmlAttrs: {
       lang: 'ja'
     },
@@ -68,6 +68,14 @@ export default {
   modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  },
+  // build: {
+  //   extend (config) {
+  //     config.output.publicPath = './'
+  //   }
+  // },
+  generate: {
+    extend (config) {
+      config.output.publicPath = 'dist'
+    }
+  } 
 }
