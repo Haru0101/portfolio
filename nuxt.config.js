@@ -3,7 +3,7 @@ export default {
   target: 'static',
 
   router: {
-    base: 'portfolio'
+    base: './'
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -68,14 +68,6 @@ export default {
   modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  // build: {
-  //   extend (config) {
-  //     config.output.publicPath = './'
-  //   }
-  // },
-  generate: {
-    extend (config) {
-      config.output.publicPath = './'
-    }
-  } 
+  build: {
+  },
 }
