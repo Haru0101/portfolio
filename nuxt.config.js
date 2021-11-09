@@ -73,9 +73,9 @@ export default {
   //     config.output.publicPath = './'
   //   }
   // },
-  // generate: {
-  //   extend (config) {
-  //     config.output.publicPath = './'
-  //   }
-  // } 
+  generate: {
+    extend (config) {
+      config.output.publicPath = './'
+    }
+  } 
 }
