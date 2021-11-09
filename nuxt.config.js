@@ -70,12 +70,12 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     extend (config) {
-      config.output.publicPath = '/portfolio/'
+      config.output.publicPath = './'
     }
   },
   generate: {
     extend (config) {
-      config.output.publicPath = '/portfolio/'
+      config.output.publicPath = './'
     }
   } 
 }
