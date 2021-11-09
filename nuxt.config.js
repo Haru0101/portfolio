@@ -68,14 +68,14 @@ export default {
   modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-    extend (config) {
-      config.output.publicPath = './'
-    }
-  },
-  generate: {
-    extend (config) {
-      config.output.publicPath = './'
-    }
-  } 
+  // build: {
+  //   extend (config) {
+  //     config.output.publicPath = './'
+  //   }
+  // },
+  // generate: {
+  //   extend (config) {
+  //     config.output.publicPath = './'
+  //   }
+  // } 
 }
