@@ -5,6 +5,9 @@ export default {
   // router: {
   //   base: 'portfolio'
   // },
+  googleAnalytics: {
+    id: 'UA-212478941-1'
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
