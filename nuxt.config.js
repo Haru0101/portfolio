@@ -50,6 +50,7 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/style-resources',
+    '@nuxtjs/google-analytics'
   ],
 
   // Global CSS: https://go.nuxtjs.dev/config-css
